@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML 5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Reator</layout>
-        <event-sheet order="1">ReatorEvents</event-sheet>
+        <layout order="1">Game</layout>
+        <event-sheet active="1" order="2">GameEvents</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -19,10 +19,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="1" name="Window Size" />
         <property expanded="1" name="Configuration Settings" />
     </properties>
-    <families-expanded root="1" />
+    <families-expanded root="1">
+        <family expanded="0" name="Reatores" />
+    </families-expanded>
     <folders-expanded>
-        <folder expanded="1" path="object-folder/" />
-        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="0" path="object-folder/" />
+        <folder expanded="0" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
@@ -33,5 +35,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/MovingPlatform/" />
         <folder expanded="1" path="animation-folder/ScirraLogo/" />
         <folder expanded="1" path="animation-folder/Usina/" />
+        <folder expanded="1" path="animation-folder/hud/" />
+        <folder expanded="1" path="animation-folder/ReatorVerde/" />
+        <folder expanded="1" path="animation-folder/ReatorVerde2/" />
+        <folder expanded="1" path="animation-folder/ReatorVerde3/" />
+        <folder expanded="1" path="animation-folder/ReatorVerde4/" />
+        <folder expanded="1" path="animation-folder/ReatorAmarelo/" />
+        <folder expanded="1" path="animation-folder/ReatorRosa/" />
+        <folder expanded="1" path="animation-folder/ReatorRosa2/" />
     </folders-expanded>
 </c2uistate>

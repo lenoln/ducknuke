@@ -11,12 +11,14 @@
     <saved-with-version>27500</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -46,6 +48,9 @@
                 <behavior-type name="ScrollTo" sid="326605911523041">
                     <behavior id="scrollto" />
                 </behavior-type>
+                <behavior-type name="BoundToLayout" sid="946960550701916">
+                    <behavior id="bound" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="960448326886689" speed="5">
@@ -66,7 +71,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Text" sid="110368138914796">
+        <object-type name="ReatoresColapsados" sid="110368138914796">
             <plugin id="Text" />
         </object-type>
         <object-type name="Keyboard" sid="271965958516867">
@@ -104,16 +109,115 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="hud" sid="660281258649274">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="150065152046205" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ReatorVerde" sid="218570094755673">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="376655287699473" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ReatorVerde2" sid="979798005730295">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="863679830184862" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ReatorVerde3" sid="546723737729817">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="846887373598971" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ReatorVerde4" sid="271785427338970">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="519368251081954" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ReatorAmarelo" sid="287620173875628">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="819741947447454" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ReatorRosa" sid="692683830120997">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="258164451348402" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ReatorRosa2" sid="907436933908476">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="453779961086780" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="254946858639455">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="TxEnergy" sid="699698981799886">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TxReatoresAtivos" sid="362771426323316">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TxReatoresColapsados" sid="184530753152518">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="ReatoresAtivos" sid="304462409143046">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
-    <families />
+    <families>
+        <family name="Reatores" plugin-id="Sprite" sid="750805135365130">
+            <members>
+                <member>ReatorAmarelo</member>
+                <member>ReatorRosa</member>
+                <member>ReatorRosa2</member>
+                <member>ReatorVerde</member>
+                <member>ReatorVerde2</member>
+                <member>ReatorVerde3</member>
+                <member>ReatorVerde4</member>
+            </members>
+            <instance-variables>
+                <instance-variable comment="Define se está ativo" name="IsSleep" sid="499364098926543" type="boolean" />
+                <instance-variable comment="Define em qual nível de energia inicial o randomico deve inferir" name="ColapseCount" sid="971223649759146" type="number" />
+                <instance-variable comment="Define o nível de energia atual do reator" name="Energia" sid="509440440187121" type="number" />
+            </instance-variables>
+        </family>
+    </families>
     <layout-folder>
-        <layout>Reator.xml</layout>
+        <layout>Game.xml</layout>
+        <layout>GameOver.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>ReatorEvents.xml</event-sheet>
+        <event-sheet>GameEvents.xml</event-sheet>
+        <event-sheet>GameOverEvents.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="15" />
+        <global-instance type="Mouse" uid="29" />
     </global-instances>
     <sounds-folder />
     <music-folder />
